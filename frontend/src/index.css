@@ -1,0 +1,81 @@
+:root {
+  /* Surfaces */
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #f1f3f7;
+  --border: #e5e7eb;
+
+  /* Text */
+  --text: #0f172a;
+  --text-muted: #64748b;
+
+  /* Accent */
+  --accent: #4f46e5;
+  --accent-2: #7c3aed;
+  --accent-border: rgba(79, 70, 229, 0.5);
+  --accent-soft: rgba(79, 70, 229, 0.1);
+
+  /* Feedback */
+  --error: #b91c1c;
+  --error-soft: #fef2f2;
+  --error-border: #fecaca;
+
+  --shadow: 0 10px 25px -12px rgba(2, 6, 23, 0.18);
+
+  --font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1117;
+    --surface: #181b23;
+    --surface-2: #20242e;
+    --border: #2b303b;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --accent: #818cf8;
+    --accent-2: #c084fc;
+    --accent-border: rgba(129, 140, 248, 0.5);
+    --accent-soft: rgba(129, 140, 248, 0.15);
+    --error: #fca5a5;
+    --error-soft: rgba(239, 68, 68, 0.12);
+    --error-border: rgba(239, 68, 68, 0.4);
+    --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Thin, unobtrusive scrollbar for the chat area. */
+.chat-window::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-window::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}

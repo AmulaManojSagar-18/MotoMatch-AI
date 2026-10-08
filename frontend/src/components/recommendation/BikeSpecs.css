@@ -1,0 +1,36 @@
+.bike-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.bike-specs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.bike-specs__value {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.bike-specs__label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+@media (max-width: 480px) {
+  .bike-specs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

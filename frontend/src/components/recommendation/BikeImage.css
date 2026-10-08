@@ -1,0 +1,41 @@
+.bike-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(
+      120% 100% at 50% 0%,
+      rgba(79, 70, 229, 0.08),
+      transparent 70%
+    ),
+    var(--surface-2);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.bike-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.bike-image--fallback {
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.bike-image__emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.bike-image__fallback-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
